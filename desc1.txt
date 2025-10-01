@@ -1,0 +1,5 @@
+393373304:
+Die SW-Compsition FuSi_Temperature_ValidationDiagnostics_Hochvoltspeicher muss mittels der Werte des Signals HVSInputSafetyValveCoolantTemperature-S6 und Temperatur_Secondary_Eingang_HVS für die Kühlmitteltemperatursensoren den Kühlsensorwert auf den Signalen Ist_Temperatur_Hochvoltspeicher_Einlauf abbilden. Im Temperaturbereich von T_SAF_min_Driftdiagnose bis T_SAF_max soll eine Differenz zwischen dem primären und sekundären Sensorwert erkannt werden, die mindestens dem Schwellwert T_SAF_Appl_DrftThrshld_Vorlauf_Einlauf entspricht.
+
+Bei einer Schwellüberschreitung und eingehendem Qualifier ==ERROR oder aktiviertem Debouncing muss der Debounce-Counter Deb_T_Vorlauf_Plaus inkrementiert werden.
+

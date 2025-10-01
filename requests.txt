@@ -1,0 +1,13 @@
+Access to the ECU-TEST API (or database/files) :
+Permission to connect to the ECU-TEST system using its API (a web interface for programs), or direct access to the database or local files where test cases are stored.
+API documentation (or at least the endpoint for listing test cases and their descriptions).
+Authentication details (username/password or API token) to use with the API.
+The credentials i need to log in to the ECU-TEST API. This could be:
+A username and password, An API token
+Permission to read test case data (IDs and descriptions) for automation purposes.
+
+
+API/database/files access	script can connect and fetch data automatically
+API documentation/endpoint	how to request the data you need
+Authentication details	        log in and be authorized
+Permission to read data	To comply with company policy and avoid access issues
