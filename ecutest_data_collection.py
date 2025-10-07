@@ -61,18 +61,7 @@ def extract_descriptions_with_objectapi(folder_path):
     Returns:
         list of dict: [{'id': ..., 'description': ...}, ...]
     """
-    # This is a placeholder for the actual ECU-TEST scripting environment.
-    # In a real ECU-TEST Python environment, you would do:
-    # import api
-    # package = api.ObjectApi.OpenPackage(folder_path)
-    # desc = package.GetDescription()
-    # You may need to loop over test cases/packages as needed.
-    # Example:
-    # results = []
-    # for pkg in api.ObjectApi.GetPackages(folder_path):
-    #     desc = pkg.GetDescription()
-    #     results.append({'id': pkg.GetId(), 'description': desc})
-    # return results
+  
     pass
 
 def extract_pkg_descriptions(folder_path):
@@ -128,22 +117,7 @@ def write_ecutest_to_csv(pkg_results, csv_path):
             writer.writerow([entry['id'], entry['description']])
 
 if __name__ == "__main__":
-    # Example usage for CSV
-    # csv_results = extract_from_csv(r'C:\path\to\your\csv_folder')
-    # for entry in csv_results:
-    #     print(f"ID: {entry['id']}, Description: {entry['description']}")
-
-    # Example usage for JSON
-    # json_results = extract_from_json(r'C:\path\to\your\json_folder')
-    # for entry in json_results:
-    #     print(f"ID: {entry['id']}, Description: {entry['description']}")
-
-    # Example usage for ECU-TEST ObjectApi (run inside ECU-TEST Python environment)
-    # folder_path = r'C:\_git_tm\ROOT_GEN6\xxx'  # <-- CHANGE THIS to your local ECU-TEST package path
-    # results = extract_descriptions_with_objectapi(folder_path)
-    # for entry in results:
-    #     print(f"ID: {entry['id']}, Description: {entry['description']}")
-
+ 
     # Example usage for .pkg extraction and Excel writing (run inside ECU-TEST Python environment)
     folder_path = r'C:\_git_tm\ROOT_GEN6\xxx'  # <-- CHANGE THIS to your local ECU-TEST package path
     excel_path = r'C:\Users\Mootaz\Desktop\reboustness\reboustness.xlsx'  # <-- CHANGE if needed
@@ -151,9 +125,4 @@ if __name__ == "__main__":
     write_ecutest_to_excel(pkg_results, excel_path)
     print(f"Extracted {len(pkg_results)} entries to {excel_path} (sheet: ECU test description)")
 
-    # Example usage for .pkg extraction and CSV writing (run inside ECU-TEST Python environment)
-    # folder_path = r'C:\_git_tm\ROOT_GEN6\xxx'  # <-- CHANGE THIS to your local ECU-TEST package path
-    # csv_path = r'C:\Users\Mootaz\Desktop\reboustness\ecutest_descriptions.csv'  # <-- CHANGE if needed
-    # pkg_results = extract_pkg_descriptions(folder_path)
-    # write_ecutest_to_csv(pkg_results, csv_path)
-    # print(f"Extracted {len(pkg_results)} entries to {csv_path}")
+
